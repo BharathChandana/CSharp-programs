@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Palindrome_number
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num, rev=0, rem, x;
+            Console.WriteLine("Enter a Number");
+            num=Convert.ToInt32(Console.ReadLine());
+            x = num;
+            while (num > 0)
+            {
+                rem = num % 10;
+                rev=rev*10+rem;
+                num = num / 10;
+            }
+            if (rev == x)
+            {
+                Console.WriteLine("Number is Palindrome");
+
+            }
+            else
+            {
+                Console.WriteLine("Number is not a Palindrome");
+            }
+
+            
+        }
+    }
+}
