@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Major
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a=0;
+            Console.WriteLine("enter the value of i:");
+            Console.ReadLine();
+            if(a<=18)
+            {
+                Console.WriteLine("You are not eligible for voting");
+
+            }
+            else
+            {
+                Console.WriteLine("You are eligible for voting");
+            }
+        }
+    }
+}
